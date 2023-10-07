@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:magical_bricks/screens/home_page.dart';
+import 'package:magical_bricks/screens/home/view/home_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const MyHomePage(),
+      // home: const PuzzleSet(boxNumber: 3, imageString: puzzle3),
     );
   }
 }
